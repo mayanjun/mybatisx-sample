@@ -1,0 +1,12 @@
+# By default, this configuration can be used directly in production environment
+# Global Application Config
+
+# config datasource
+
+mybatisx:
+  datasources:
+    - {
+      jdbcUrl: "jdbc:mysql://127.0.0.1:3306/sampledb",
+      username: "root",
+      password: "123456"
+    }
