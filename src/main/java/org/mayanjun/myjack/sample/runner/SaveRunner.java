@@ -16,6 +16,7 @@
 
 package org.mayanjun.myjack.sample.runner;
 
+import org.mayanjun.mybatisx.dal.util.JSONER;
 import org.mayanjun.myjack.sample.AbstractTestRunner;
 import org.mayanjun.myjack.sample.Runner;
 import org.mayanjun.myjack.sample.RunnerConfig;
@@ -49,6 +50,7 @@ public class SaveRunner extends AbstractTestRunner {
             contacts.setMobile(randomMobile());
             student.setContacts(contacts);
             dao.save(student);
+            LOG.info("students is save success: {}", JSONER.se(student));
         }
         LOG.info("{} students is save success", count);
     }
