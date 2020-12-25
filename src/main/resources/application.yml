@@ -8,5 +8,6 @@ mybatisx:
     - {
       jdbcUrl: "jdbc:mysql://127.0.0.1:3306/sampledb",
       username: "root",
-      password: "123456"
+      password: "123456",
+      idGeneratorType: "org.mayanjun.myjack.sample.runner.MyIdGenerator"
     }
